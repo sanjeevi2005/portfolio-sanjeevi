@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjeevi S — Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <nav>
+    <a href="#" class="nav-logo">P<span>ortfolio</span></a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-tag">Available for Internships &amp; Collaboration</div>
+      <h1 class="name glitch" data-text="SANJEEVI S">
+        <span class="name-accent">SAN</span>JEEVI<span class="name-accent"> S</span>
+        <br>
+
+      </h1>
+      <p class="hero-title type-cursor" id="heroTitle">Web &amp; App Developer | Computer Science Engineer</p>
+      <div class="hero-motto">"Architecting the Future<br>through Code &amp; Logic."</div>
+      <div class="hero-edu">
+        <div class="edu-line">
+          <span class="label">EDU //</span>
+          B.E. Computer Science — Mahendra Engineering College
+        </div>
+        <div class="edu-line">
+          <span class="label">BATCH //</span>
+          2023 – 2027
+        </div>
+        <div class="edu-line">
+          <span class="label">CGPA //</span>
+          8.49 / 10.0 &nbsp;★ Academic Excellence
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn"><span>View Projects</span></a>
+        <a href="#contact" class="btn btn-solid"><span>Let's Connect</span></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stats left">
+        <div class="stat-card">
+          <div class="stat-num count-up" data-target="2">0</div>
+          <div class="stat-label">PROJECTS BUILT</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">8.49</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+      </div>
+      <div class="orb-container">
+        <div class="orb"></div>
+        <div class="orb-ring"></div>
+        <div class="orb-ring"></div>
+        <div class="orb-ring"></div>
+      </div>
+      <div class="hero-stats right">
+        <div class="stat-card">
+          <div class="stat-num count-up" data-target="7">0</div>
+          <div class="stat-label">TECH STACK</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2027</div>
+          <div class="stat-label">GRADUATING</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-num"></span>
+      <h2 class="section-title">Technical Stack</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="cat-icon">📱</div>
+        <div class="cat-name">Mobile & Frontend</div>
+        <div class="skill-tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Expo</span>
+          <span class="tag">JavaScript ES6+</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">Mobile-First</span>
+          <span class="tag">Gesture Handling</span>
+        </div>
+      </div>
+      <div class="skill-category reveal" style="animation-delay:0.15s">
+        <div class="cat-icon">⚙️</div>
+        <div class="cat-name">Backend & Systems</div>
+        <div class="skill-tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Relational Schema</span>
+          <span class="tag">Data Normalization</span>
+          <span class="tag">JSON Handling</span>
+        </div>
+      </div>
+      <div class="skill-category reveal" style="animation-delay:0.3s">
+        <div class="cat-icon">🔧</div>
+        <div class="cat-name">APIs & Tooling</div>
+        <div class="skill-tags">
+          <span class="tag">Google Maps API</span>
+          <span class="tag">RESTful Services</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Version Control</span>
+          <span class="tag">Geolocation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-matrix">
+      <div class="section-header reveal" style="margin-bottom:2rem">
+        <span class="section-num"></span>
+        <h3 class="section-title" style="font-size:2rem">Proficiency Matrix</h3>
+        <div class="section-line"></div>
+      </div>
+      <div class="matrix-row reveal" style="--pct:95%">
+        <span class="matrix-skill">Mobile Dev</span>
+        <div class="matrix-bar-track">
+          <div class="matrix-bar-fill"></div>
+        </div>
+        <span class="matrix-level">EXPERT</span>
+      </div>
+      <div class="matrix-row reveal" style="--pct:88%; animation-delay:0.1s">
+        <span class="matrix-skill">Frontend Dev</span>
+        <div class="matrix-bar-track">
+          <div class="matrix-bar-fill"></div>
+        </div>
+        <span class="matrix-level">EXPERT</span>
+      </div>
+      <div class="matrix-row reveal" style="--pct:80%; animation-delay:0.2s">
+        <span class="matrix-skill">Backend / Node.js</span>
+        <div class="matrix-bar-track">
+          <div class="matrix-bar-fill"></div>
+        </div>
+        <span class="matrix-level">ADVANCED</span>
+      </div>
+      <div class="matrix-row reveal" style="--pct:78%; animation-delay:0.3s">
+        <span class="matrix-skill">SQL / Databases</span>
+        <div class="matrix-bar-track">
+          <div class="matrix-bar-fill"></div>
+        </div>
+        <span class="matrix-level">ADVANCED</span>
+      </div>
+      <div class="matrix-row reveal" style="--pct:92%; animation-delay:0.4s">
+        <span class="matrix-skill">Version Control</span>
+        <div class="matrix-bar-track">
+          <div class="matrix-bar-fill"></div>
+        </div>
+        <span class="matrix-level">EXPERT</span>
+      </div>
+      <div class="matrix-row reveal" style="--pct:70%; animation-delay:0.5s">
+        <span class="matrix-skill">API Integration</span>
+        <div class="matrix-bar-track">
+          <div class="matrix-bar-fill"></div>
+        </div>
+        <span class="matrix-level">ADVANCED</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num"></span>
+      <h2 class="section-title">Case Studies</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-container">
+      <div class="project-card reveal">
+        <div class="project-num">01</div>
+        <div>
+          <div class="project-badge">🛰️ Cross-Platform Mobile App</div>
+          <h3 class="project-title">BUS NAV</h3>
+          <p class="project-type">REAL-TIME GEOLOCATION SYSTEM</p>
+          <div class="project-stack">
+            <span class="stack-chip">React Native</span>
+            <span class="stack-chip">Expo</span>
+            <span class="stack-chip">Node.js</span>
+            <span class="stack-chip">Google Maps API</span>
+          </div>
+          <div class="project-detail">
+            <div class="detail-item">
+              <span class="detail-label">Challenge</span>
+              <span class="detail-text">Implementing accurate real-time geolocation tracking without compromising device
+                performance.</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Solution</span>
+              <span class="detail-text">Engineered a robust Google Maps API integration with a Node.js backend to stream
+                location data efficiently.</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Learning</span>
+              <span class="detail-text">Mastered mobile background tasks and API rate-limiting strategies.</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="proj-mockup">
+            <div class="proj-grid-lines"></div>
+            <div class="proj-icon">🛰️</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reverse reveal" style="animation-delay:0.2s">
+        <div class="project-num">02</div>
+        <div>
+          <div class="project-badge" style="border-color:var(--accent2);color:var(--accent2)">🛍️ Web Platform</div>
+          <h3 class="project-title">NOSTRA</h3>
+          <p class="project-type">HIGH-PERFORMANCE E-COMMERCE</p>
+          <div class="project-stack">
+            <span class="stack-chip"
+              style="border-color:rgba(0,229,255,0.3);color:var(--accent2);background:rgba(0,229,255,0.05)">HTML5</span>
+            <span class="stack-chip"
+              style="border-color:rgba(0,229,255,0.3);color:var(--accent2);background:rgba(0,229,255,0.05)">CSS3</span>
+            <span class="stack-chip"
+              style="border-color:rgba(0,229,255,0.3);color:var(--accent2);background:rgba(0,229,255,0.05)">JavaScript</span>
+          </div>
+          <div class="project-detail">
+            <div class="detail-item">
+              <span class="detail-label">Focus</span>
+              <span class="detail-text">UI/UX Excellence &amp; Frontend Performance with mobile-first
+                architecture.</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Result</span>
+              <span class="detail-text">Fully responsive e-commerce storefront with optimized asset delivery and clean,
+                modular code architecture.</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="proj-mockup" style="background: linear-gradient(135deg, var(--dim), rgba(0,229,255,0.05));">
+            <div class="proj-grid-lines"
+              style="background-image: linear-gradient(rgba(0,229,255,0.04) 1px,transparent 1px), linear-gradient(90deg,rgba(0,229,255,0.04) 1px,transparent 1px); background-size:30px 30px;">
+            </div>
+            <div class="proj-icon">🛍️</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-num"></span>
+      <h2 class="section-title">The Sanjeevi Edge</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-inner">
+      <div class="about-left">
+        <p class="about-quote reveal">Build.<br><em>Solve.</em><br>Architect.<br>Repeat.</p>
+      </div>
+      <div>
+        <p class="about-text reveal">I am a Computer Science Engineer with a focused "Build-to-Solve" mindset. With a
+          CGPA of 8.49, I prioritize both academic rigor and practical innovation. My expertise lies in the JavaScript
+          ecosystem — specifically building mobile apps that bridge the physical and digital worlds through APIs.</p>
+        <p class="about-text reveal" style="animation-delay:0.1s">I am driven by clean code, efficient database
+          structures, and the goal of becoming a <strong style="color:var(--accent)">Lead Systems Architect</strong>.
+        </p>
+        <div class="roadmap reveal">
+          <div class="roadmap-title">// Career Roadmap 2026–2027</div>
+          <div class="roadmap-items">
+            <div class="roadmap-item">
+              <div class="roadmap-dot"></div>
+              <div>
+                <div class="roadmap-phase">NOW // Current Phase</div>
+                <div class="roadmap-text">Finalizing advanced full-stack projects &amp; maintaining academic lead (8.49
+                  CGPA).</div>
+              </div>
+            </div>
+            <div class="roadmap-item">
+              <div class="roadmap-dot"></div>
+              <div>
+                <div class="roadmap-phase">NEXT // Milestone 2026</div>
+                <div class="roadmap-text">Integrating AI-driven predictive analytics into the Bus Nav ecosystem.</div>
+              </div>
+            </div>
+            <div class="roadmap-item future">
+              <div class="roadmap-dot"></div>
+              <div>
+                <div class="roadmap-phase">GOAL // Post-2027</div>
+                <div class="roadmap-text">Transitioning into a Senior Full-Stack Engineer role post-graduation.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-bg"></div>
+    <h2 class="contact-title reveal">LET'S<br><span style="color:var(--accent)">BUILD</span><br>TOGETHER</h2>
+    <p class="contact-sub reveal">Open for high-impact internships &amp; collaborative tech projects</p>
+    <div class="contact-links reveal">
+      <a href="mailto:your@email.com" class="contact-link">
+        <span class="contact-icon">📧</span>
+        <span>Email Me</span>
+      </a>
+      <a href="https://github.com/" target="_blank" class="contact-link">
+        <span class="contact-icon">💻</span>
+        <span>GitHub</span>
+      </a>
+      <a href="https://linkedin.com/" target="_blank" class="contact-link">
+        <span class="contact-icon">🔗</span>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+    <div class="avail-badge reveal">
+      <div class="avail-dot"></div>
+      Available for Internships
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sanjeevi S — Computer Science Engineer</p>
+    <p>Crafted with Code &amp; Logic</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
