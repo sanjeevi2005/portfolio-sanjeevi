@@ -402,6 +402,11 @@ nav {
     width: 100%;
 }
 
+.hero-left {
+    animation: fadeIn .8s both;
+    width: 100%;
+}
+
 .hero-tag {
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
@@ -1740,6 +1745,13 @@ footer {
         display: none !important;
     }
 
+    #hero {
+        padding-top: 140px !important;
+        align-items: flex-start !important;
+        min-height: auto !important;
+        width: 100% !important;
+    }
+
     .hero-inner {
         grid-template-columns: 1fr !important;
         gap: 40px !important;
@@ -1909,12 +1921,6 @@ footer {
         display: none;
     }
 
-    #hero {
-        padding-top: 140px !important;
-        align-items: flex-start !important;
-        min-height: auto !important;
-    }
-
     .container {
         padding: 0 24px;
     }
@@ -1945,5 +1951,33 @@ footer {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero-name {
+        font-size: clamp(38px, 12vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .sec-title {
+        font-size: clamp(18px, 6vw, 22px);
+    }
+
+    .btn-primary, .btn-outline, .btn-cv {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-edu {
+        align-items: center;
+        margin-bottom: 32px;
     }
 }
